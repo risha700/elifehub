@@ -17,6 +17,11 @@
         "laravel-mix": "^2.0",
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
+        "uikit": "^3.0.0-rc.22",
         "vue": "^2.5.17"
+    },
+    "dependencies": {
+        "ajv": "^6.5.5",
+        "imagemin": "^5.3.1"
     }
 }

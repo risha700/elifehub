@@ -1,14 +1,54 @@
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "variables";
+@import "~uikit/src/scss/variables-theme.scss";
+@import "~uikit/src/scss/mixins-theme.scss";
+@import "~uikit/src/scss/uikit-theme.scss";
 
-// Variables
-@import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+
+
+.bottom-curve{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.top-curve{
+  position: absolute;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.head-line:after {
+  display: block;
+  width: 34px;
+  height: 0;
+  border-bottom: 4px solid;
+  content: " ";
+  position: relative;
+  left: 1px;
+  color: inherit;
+}
+
+.hero{
+  background:url('/svg/bg.svg') repeat  top 300px left 100px, linear-gradient(to right top, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F,#F9F871);
+  background-blend-mode: color-burn;
+}
+
+.uk-navbar-dropdown:before{
+  border-bottom: 11px solid #fff;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: -11px;
 }
